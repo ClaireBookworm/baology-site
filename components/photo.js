@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import { Box, Text, Image } from 'rebass'
-import { useColorMode } from 'theme-ui'
-import theme from './theme'
+import styled from "@emotion/styled";
+import { Box, Text, Image } from "rebass";
+import { useColorMode } from "theme-ui";
+import theme from "./theme";
 
 const Caption = styled(Text)`
   display: block;
@@ -9,11 +9,13 @@ const Caption = styled(Text)`
   line-height: ${theme.lineHeights.body};
   padding: ${theme.space[2]}px ${theme.space[3]}px;
   position: absolute;
-  ${props =>
-    props.captionTop ? `
+  ${(props) =>
+    props.captionTop
+      ? `
       top: 0;
       border-radius: ${theme.radii.extra}px ${theme.radii.extra}px 0 0;
-    ` : `
+    `
+      : `
       bottom: 0;
       border-radius: 0 0 ${theme.radii.extra}px ${theme.radii.extra}px;
     `};
@@ -21,7 +23,7 @@ const Caption = styled(Text)`
   max-width: 100%;
   z-index: 0;
   ${({ colorMode }) =>
-    colorMode === 'dark'
+    colorMode === "dark"
       ? `
           background-color: rgba(0, 0, 0, 0.75);
           color: ${theme.colors.white};
@@ -41,34 +43,34 @@ const Caption = styled(Text)`
   @media (prefers-reduced-transparency: reduce) {
     -webkit-backdrop-filter: none !important;
   }
-`
+`;
 
 const Photo = ({ src, alt, showAlt, wide, ...props }) => {
-  const [colorMode] = useColorMode()
-  const showCaption = showAlt && alt
+  const [colorMode] = useColorMode();
+  const showCaption = showAlt && alt;
   return (
     <Box
       {...props}
       variant="sheet"
       sx={{
         p: 0,
-        height: ['18rem', wide ? '66vh' : '20rem', wide ? '75vh' : '24rem'],
-        minHeight: ['18rem', '20rem', '24rem'],
-        position: 'relative',
-        maxWidth: '100%',
-        gridColumn: [null, wide ? 'span 2' : null],
-        ...props.sx
+        height: ["18rem", wide ? "66vh" : "20rem", wide ? "75vh" : "24rem"],
+        minHeight: ["18rem", "20rem", "24rem"],
+        position: "relative",
+        maxWidth: "100%",
+        gridColumn: [null, wide ? "span 2" : null],
+        ...props.sx,
       }}
     >
       <Image
         src={src}
         alt={alt}
         loading="lazy"
-        sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        sx={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
       {showCaption && <Caption colorMode={colorMode} children={alt} />}
     </Box>
-  )
-}
+  );
+};
 
-export default Photo
+export default Photo;
