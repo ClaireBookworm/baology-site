@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
 export default ({
-  title = 'AngelHacks – PA’s largest high school hackathon',
-  description = 'November 2019, 111 hackers came together for Pennsylvania’s largest high school hackathon ever.',
-  image = 'https://2019.hackpenn.com/card.png',
-  url = 'https://angelhacks.org'
+  title = 'Baology',
+  description = 'A biology class with Kevin Bao.',
+  image = 'https://baology.org/images/baology-logo.png',
+  url = 'https://baology.org'
 }) => (
   <Head>
     <title>{title}</title>
@@ -12,8 +12,8 @@ export default ({
     <meta name="twitter:title" content={title} />
     <meta name="og:url" content={url} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="AngelHacks" />
-    <meta name="twitter:site" content="@angelhacks" />
+    <meta property="og:site_name" content="baology" />
+    <meta name="twitter:site" content="@baology" />
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     <meta name="twitter:description" content={description} />
@@ -25,20 +25,19 @@ export default ({
       dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: 'hackpenn',
-        url: 'https://hackpenn.com',
-        logo: 'https://2019.hackpenn.com/flag.png',
+        name: 'baology',
+        url: 'https://baology.org',
+        logo: 'https://baology.org/flag.png',
         sameAs: [
-          'https://twitter.com/hackpenn',
-          'https://www.instagram.com/angelhacks.la',
-          'https://www.facebook.com/hackpenn'
+          'https://www.instagram.org/baology',
+          'https://www.facebook.com/baology'
         ],
         contactPoint: [
           {
             '@type': 'ContactPoint',
-            email: 'contact@hackpenn.com',
+            email: 'contact@baology.org',
             contactType: 'customer support',
-            url: 'https://hackpenn.com'
+            url: 'https://baology.org'
           }
         ]
       })}}
