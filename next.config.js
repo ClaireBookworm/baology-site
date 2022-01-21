@@ -1,3 +1,6 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const withMDX = require('@zeit/next-mdx')({
+  extension: /\.mdx?$/
+})
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'mdx']
+})

@@ -5,6 +5,14 @@
 /.pnp
 .pnp.js
 
+node_modules/
+package-lock.json
+yarn-error.log
+.cache/
+public/
+.DS_Store
+
+
 # testing
 /coverage
 
