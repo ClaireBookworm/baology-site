@@ -1,3 +1,3 @@
-# AngelHacks 2019 site
+# Baology site
 
 MIT License
