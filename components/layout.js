@@ -59,7 +59,7 @@ export default props => {
         <Avatar light size={48} sx={{ mr: 1 }} />
         <Link href="/">
           <A variant="styles.navitem" sx={{ display: ['none', 'block'] }}>
-            AngelHacks
+            baology
           </A>
         </Link>
         <Box sx={{ mx: 'auto' }} />
@@ -107,16 +107,13 @@ export default props => {
         >
           <Flex sx={{ justifyContent: 'center' }}>
             <A
-              href="https://instagram.com/angelhacks.la"
+              href="https://instagram.com/baology"
               title="Instagram"
               sx={{ mx: 2 }}
             >
               <Icon glyph="instagram" size={36} />
             </A>
-            <A href="https://github.com/ClaireBookworm/angelhacks" title="GitHub" sx={{ mx: 2 }}>
-              <Icon glyph="github" size={36} />
-            </A>
-            <A href="mailto:claire@angelhacks.org" title="Email" sx={{ mx: 2 }}>
+            <A href="mailto:kevin@baology.org" title="Email" sx={{ mx: 2 }}>
               <Icon glyph="email" size={36} />
             </A>
           </Flex>
@@ -127,14 +124,6 @@ export default props => {
               a: { fontSize: 1 }
             }}
           >
-            <A
-              href="https://lachlanjc.me"
-              target="_blank"
-              variant="styles.navitem"
-              sx={{ color: 'inherit', fontSize: 0 }}
-            >
-              Site by @lachlanjc
-            </A>
             <Text
               sx={{
                 color: 'muted',
@@ -143,9 +132,8 @@ export default props => {
                 mb: 0
               }}
             >
-              Fiscally sponsored by The Hack Foundation.
+              Baology is not affiliated with USABO.
               <br />
-              Nonprofit EIN: 81-2908499.
             </Text>
           </Box>
         </Box>

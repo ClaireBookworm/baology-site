@@ -1,9 +1,33 @@
 import { Banner, List, Container, Callout, Gallery, FAQ, Team } from '../components/blocks'
 import { Box, Button } from 'rebass'
 import Link from 'next/link'
-import Sponsors from '../components/sponsors'
 import Photo from '../components/photo'
 
 <Banner>
 
 # Baology Olympiad Preparatory Course with Kevin Bao
+
+<Link href="/register">
+  <Button
+    as="a"
+    sx={{
+      bg: 'accent',
+      color: 'white',
+      borderRadius: 'circle',
+      fontFamily: 'inherit',
+      fontSize: [2, 3],
+      lineHeight: 2,
+      cursor: 'pointer',
+      px: 4,
+      mt: [3, 4],
+      transition: 'transform ease .125s',
+      ':hover, :focus': {
+        transform: 'scale(1.0625)'
+      }
+    }}>
+    Register now »
+  </Button>
+</Link>
+
+
+</Banner>
