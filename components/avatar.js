@@ -6,8 +6,8 @@ export default ({ size = 32, light = false, ...props }) => (
     <A sx={{ cursor: 'pointer', lineHeight: 0 }}>
       <Image
         {...props}
-        src={"https://angelhacks.org/images/transparent-logo.png"}
-        alt="AngelHacks avatar"
+        src={"https://baology.org/images/transparent-logo.png"}
+        alt="baology avatar"
         width={size}
         height={size}
         sx={{ borderRadius: 'circle', overflow: 'hidden', bg: 'slate', p: 2, ...props.sx }}

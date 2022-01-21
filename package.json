@@ -1,8 +1,7 @@
 {
-  "name": "@angelhacks/site",
+  "name": "@baology/site",
   "version": "1.0.0",
   "private": true,
-  "author": "Lachlan Campbell <lachlan@hackpenn.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next",
